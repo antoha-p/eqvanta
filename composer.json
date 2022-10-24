@@ -1,0 +1,33 @@
+{
+  "name": "eqvanta/task1",
+  "type": "project",
+  "license": "commercial",
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.4"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.8",
+    "squizlabs/php_codesniffer": "^3.6"
+  },
+  "scripts": {
+    "post-install-cmd": "composer dump -o",
+    "post-update-cmd": "composer dump -o"
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\": "app"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "tests\\": "tests"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
